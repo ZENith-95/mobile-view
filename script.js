@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const video = document.getElementById("video");
   const playPauseBtn = document.getElementById("play-pause-btn");
@@ -8,37 +6,38 @@ document.addEventListener("DOMContentLoaded", () => {
   playPauseBtn.addEventListener("click", () => {
     if (video.paused) {
       video.play();
-      playIcon.src = "./Assets/pause.png"; 
+      playIcon.src = "./Assets/pause.png";
     } else {
       video.pause();
-      playIcon.src = "./Assets/play.png"; 
+      playIcon.src = "./Assets/play.png";
     }
   });
 });
 
-
 // Function to toggle the dropdown menu
 function toggleMenu() {
   const dropdownMenu = document.getElementById("dropdownMenu");
-  const isMenuOpen = dropdownMenu.style.display === "flex";
+  const hamburger = document.querySelector(".hamburger");
 
-  if (isMenuOpen) {
-    hideMenu();
+  // Toggle the dropdown menu visibility
+  if (dropdownMenu.style.display === "flex") {
+    dropdownMenu.style.display = "none";
+    document.removeEventListener("click", outsideClickHandler);
   } else {
     dropdownMenu.style.display = "flex";
-
-    // Add an event listener to close the menu when clicking outside
-    document.addEventListener("click", outsideClickHandler);
+    setTimeout(() => {
+      document.addEventListener("click", outsideClickHandler);
+    }, 0); // Delay to ensure event listener doesn't immediately close the menu
   }
 }
 
 // Function to close the menu
 function hideMenu() {
   const dropdownMenu = document.getElementById("dropdownMenu");
-  dropdownMenu.style.display = "none";
-
-  // Remove the event listener when the menu is closed
-  document.removeEventListener("click", outsideClickHandler);
+  if (dropdownMenu.style.display === "flex") {
+    dropdownMenu.style.display = "none";
+    document.removeEventListener("click", outsideClickHandler);
+  }
 }
 
 // Function to handle clicks outside the dropdown menu
@@ -46,7 +45,6 @@ function outsideClickHandler(event) {
   const dropdownMenu = document.getElementById("dropdownMenu");
   const hamburger = document.querySelector(".hamburger");
 
-  // Check if the click is outside the menu and the hamburger button
   if (
     !dropdownMenu.contains(event.target) &&
     !hamburger.contains(event.target)
@@ -72,7 +70,6 @@ backToTopButton.onclick = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-
 // Select elements
 const selectMenuHead = document.getElementById("selectMenuHead");
 const selectMenuDropdown = document.getElementById("selectMenuDropdown");
@@ -89,4 +86,3 @@ window.addEventListener("click", (event) => {
     selectMenuDropdown.style.display = "none";
   }
 });
-

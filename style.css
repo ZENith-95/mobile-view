@@ -167,12 +167,12 @@ button:hover {
   box-shadow: 0px 4px 7px var(--bs-dark);
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1.5rem;
   z-index: 7;
   justify-content: flex-start;
   background-color: #1b9ad9c0;
   backdrop-filter: blur(10px);
-  /* display: none; */
+  display: none;
   padding-top: 1rem;
   transition: all 0.5s ease-in;
   animation: drop 0.3s ease-in forwards;
@@ -1055,11 +1055,22 @@ video {
   }
 
   .header .main-nav {
-    padding: 0;
+    padding: 0 1rem;
     gap: 1rem;
-    justify-content: center;
-    max-width: 100%;
+    justify-content: space-between;
+    max-width: 95%;
     margin-right: -2.5rem;
+  }
+
+  .header .main-nav .drop-down {
+    top: 4rem;
+    box-shadow: 0px 0px 6px black;
+  }
+
+  .header .main-nav .drop-down a{
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
   }
 
   .header .main-nav .logo a .logo-text {
@@ -1328,13 +1339,15 @@ video {
   .about {
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
     padding: 2rem 0;
   }
 
   .about .about-icons {
     flex-direction: row;
+    width: 90%;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .logo {
@@ -1356,8 +1369,9 @@ video {
   }
 
   .about .about-icons .logo a {
-    justify-content: flex-start;
+    justify-content: center;
     margin-left: 1.2rem;
+    width: fit-content;
   }
 
   .about .about-icons .socials {
@@ -1433,6 +1447,17 @@ video {
     justify-content: center;
     max-width: 100%;
     margin-right: -2.5rem;
+  }
+
+    .header .main-nav .drop-down {
+    top: 4rem;
+    box-shadow: 0px 0px 6px black;
+  }
+
+  .header .main-nav .drop-down a{
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
   }
 
   .header .main-nav .logo a .logo-text {
@@ -1807,6 +1832,17 @@ video {
     margin-right: -2.5rem;
   }
 
+    .header .main-nav .drop-down {
+    top: 4rem;
+    box-shadow: 0px 0px 6px black;
+  }
+
+  .header .main-nav .drop-down a{
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+  }
+
   .header .main-nav .logo a .logo-text {
     font-size: 1rem;
     font-weight: 600;
@@ -2177,6 +2213,17 @@ video {
     justify-content: center;
     max-width: 100%;
     margin-right: -2.5rem;
+  }
+
+    .header .main-nav .drop-down {
+    top: 4rem;
+    box-shadow: 0px 0px 6px black;
+  }
+
+  .header .main-nav .drop-down a{
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
   }
 
   .header .main-nav .logo a .logo-text {
