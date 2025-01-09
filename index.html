@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile view</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <div class="main-nav">
+        <div class="logo">
+          <a href="#">
+            <div class="logo-img">
+              <img src="./Assets/logo.png" alt="main logo" />
+            </div>
+            <div class="logo-text">
+              MOBILE <br />
+              VIEW
+            </div>
+          </a>
+        </div>
+        <div class="nav">
+          <div class="nav-bar">
+            <a href="#destinations">Destinations</a>
+            <a href="#stories">Stories</a>
+            <a href="#highlights">Highlights</a>
+            <a href="#contact">Contact</a>
+            <a href="#footer">About</a>
+          </div>
+          <div class="nav-right">
+            <div class="nav-search">
+              <div class="search-icon">
+                <img src="./Assets/Search.png" alt="" />
+              </div>
+              <input id="search-input" type="search" placeholder="Search..." />
+              <div class="close-search">
+                <img src="./Assets/close-search.png" alt="" />
+              </div>
+            </div>
+            <div class="main-btn">Sign In</div>
+          </div>
+        </div>
+        <div class="drop-down" id="dropdownMenu">
+          <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+          <a href="#destinations">Destinations</a>
+          <a href="#stories">Stories</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#contact">Contact</a>
+          <a href="#footer">About</a>
+          <input type="search" placeholder="Search..." />
+          <div class="sign-out">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>Sign Out
+          </div>
+        </div>
+        <div class="m-nav">
+          <div class="m-btn">Sign In</div>
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <section class="hero" id="hero">
+        <div class="main-hero">
+          <div class="hero-text">
+            <h1>Discover the World's <span>Hidden</span> Wonders</h1>
+            <p>
+              Unveil the beauty of unexplored destinations and immerse yourself
+              in breathtaking landscapes, rich cultures, and timeless
+              experiences. From secluded beaches to ancient landmarks, the world
+              is brimming with hidden treasures waiting to be discovered. Let
+              your journey ignite a sense of wonder and adventure as you explore
+              the extraordinary.
+            </p>
+            <div class="main-btn">Learn more</div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-bg">
+              <img src="./Assets/Vector_left.png" alt="" />
+              <img src="./Assets/Vector1.png" alt="" />
+              <img src="./Assets/Vector2.png" alt="" />
+
+              <img src="./Assets/island_Vector.png" alt="" />
+            </div>
+            <div class="hero-img">
+              <div class="hero-img-main">
+                <img src="./Assets/Great_Wall1.png" alt="Great Wall of China" />
+              </div>
+              <div class="hero-img-sub">
+                <div class="sub-top">
+                  <img src="./Assets/Great_Wall.png" alt="Mount Everest" />
+                </div>
+                <div class="sub-bottom">
+                  <img src="./Assets/Hotel_on_Sea.png" alt="Hotel on sea" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="destination" class="destination">
+        <h2>Top Destinations</h2>
+        <div class="top-destinations">
+          <div class="destination-nav">
+            <div class="select-menu">
+              <button class="select-menu-head" id="selectMenuHead">
+                Popular
+                <i style="margin-left: 10px" class="fa-solid fa-caret-down"></i>
+              </button>
+              <ul class="select-menu-dropdown" id="selectMenuDropdown">
+                <li><a href="#">Accra</a></li>
+                <li><a href="#">Kumasi</a></li>
+                <li><a href="#">Hohoe</a></li>
+                <li><a href="#">Ho</a></li>
+                <li><a href="#">Takoradi</a></li>
+                <li><a href="#">Tamale</a></li>
+                <li><a href="#">Aflao</a></li>
+                <li><a href="#">Sekondi</a></li>
+                <li><a href="#">Dome</a></li>
+              </ul>
+            </div>
+
+            <div class="popular">Popular</div>
+            <div class="popular-list">
+              <ul>
+                <li><a href="#">Acrra</a></li>
+                <li><a href="#">Kumasi</a></li>
+                <li><a href="#">Hohoe</a></li>
+                <li><a href="#">Ho</a></li>
+                <li><a href="#">Takoradi</a></li>
+                <li><a href="#">Tamale</a></li>
+                <li><a href="#">Aflao</a></li>
+                <li><a href="#">Secondi</a></li>
+                <li><a href="#">Dome</a></li>
+              </ul>
+            </div>
+            <button id="ov-btn">Click here to continue</button>
+          </div>
+          <div class="destination-images">
+            <div class="destination-box">
+              <div class="destination-img">
+                <img src="./Assets/waterfall.png" alt="" />
+              </div>
+              <h5>Golden Bridge, Bii Ne Hills</h5>
+              <p>Tv poll</p>
+            </div>
+            <div class="destination-box">
+              <div class="destination-img">
+                <img src="./Assets/Golden_bridge(1).png" alt="" />
+              </div>
+              <h5>Golden Bridge, Bii Ne Hills</h5>
+              <p>Tv poll</p>
+            </div>
+            <div class="destination-box">
+              <div class="destination-img">
+                <img src="./Assets/Volta_serene.png" alt="" />
+              </div>
+              <h5>Volta Serene, OLA Top Hotel</h5>
+              <p>Tv poll, Ho</p>
+            </div>
+            <div class="destination-box">
+              <div class="destination-img">
+                <img src="./Assets/golden_bride.png" alt="" />
+              </div>
+              <h5>Golden Bridge, Bii Ne Hills</h5>
+              <p>Tv poll</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="stories" class="stories">
+        <h2>Latest Stories</h2>
+        <div class="main-stories">
+          <div class="stories-left">
+            <div class="stories-image">
+              <img src="./Assets/Labadi_Beach.png" alt="" srcset="" />
+            </div>
+            <h6>Stevens Hotel</h6>
+            <h5>Experience Luxury and Relaxation at Labadi Beach</h5>
+            <p>
+              Nestled along the pristine coastline, Stevens Hotel offers an
+              unparalleled retreat with breathtaking views of Labadi Beach.
+              Immerse yourself in a world of tranquility, where luxury meets
+              nature in perfect harmony. From premium amenities to exceptional
+              service, every detail is crafted for your comfort.
+            </p>
+          </div>
+          <div class="stories-right">
+            <div class="sub-story">
+              <div class="sub-story-img">
+                <img src="./Assets/Stevens_hotel1.png" alt="" />
+              </div>
+              <div class="sub-story-text">
+                <h6>Stevens Hotel</h6>
+                <h5>Unwind in Style: Elegant Suites with Ocean Views</h5>
+                <p>
+                  Our elegantly designed suites offer panoramic views of the
+                  ocean, ensuring a serene escape from the hustle and bustle of
+                  daily life. Indulge in the perfect blend of comfort and
+                  sophistication.
+                </p>
+              </div>
+            </div>
+            <div class="sub-story">
+              <div class="sub-story-img">
+                <img src="./Assets/Stevens_hotel2.png" alt="" />
+              </div>
+              <div class="sub-story-text">
+                <h6>Stevens Hotel</h6>
+                <h5>Dive into Luxury: A Stunning Poolside Experience</h5>
+                <p>
+                  Relax by the pool with a refreshing drink in hand, surrounded
+                  by lush greenery and serene vibes. Perfect for a rejuvenating
+                  getaway or a family vacation.
+                </p>
+              </div>
+            </div>
+            <div class="sub-story">
+              <div class="sub-story-img">
+                <img src="./Assets/Stevens_hotel3.png" alt="" />
+              </div>
+              <div class="sub-story-text">
+                <h6>Stevens Hotel</h6>
+                <h5>Culinary Excellence: Fine Dining Redefined</h5>
+                <p>
+                  Savor exquisite dishes prepared by world-class chefs at our
+                  on-site restaurant. From local delicacies to international
+                  favorites, every meal is a culinary masterpiece.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>Click here to continue</button>
+      </section>
+      <section id="highlights" class="highlights">
+        <h2>Trekkers Highlights</h2>
+        <div class="main-highlights">
+          <!-- Left Section -->
+          <div class="highlights-left">
+            <div class="presenter">
+              <div class="presenter-img">
+                <img src="./Assets/Avatar-img.png" alt="Presenter Image" />
+              </div>
+              <div class="presenter-text">
+                <h5>Siku Courage</h5>
+                <p>Presenter</p>
+              </div>
+            </div>
+            <div class="stars">
+              <img src="./Assets/Group 2.png" alt="Star Ratings" />
+            </div>
+            <h4 class="highlight-title">
+              Embracing Resilience and Courage in Challenging Times
+            </h4>
+            <p class="highlight-desc">
+              In a world that constantly tests our strength and determination,
+              finding courage and resilience can make all the difference. Siku
+              Courage shares inspiring stories and actionable strategies to help
+              individuals embrace challenges, overcome adversity, and emerge
+              stronger than ever. Through his engaging presentations, Siku
+              highlights the importance of perseverance, hope, and a positive
+              mindset in achieving personal and professional growth.
+            </p>
+          </div>
+          <div class="highlights-right">
+            <div class="ghana-stone">
+              <img src="./Assets/Ghana_Stone.png" alt="Ghana Stone" />
+            </div>
+            <div class="video-main">
+              <div class="video-container">
+                <video
+                  id="video"
+                  src="./Assets/-83db-453d-b279-6c8425ce1229 (1).mp4"
+                  poster="./Assets/Rectangle 6.png"></video>
+                <div class="video-controls">
+                  <button id="play-pause-btn">
+                    <img
+                      src="./Assets/play.png"
+                      alt="Play Icon"
+                      id="play-icon" />
+                  </button>
+                </div>
+              </div>
+              <h5 class="video-caption">
+                Discovering the Wonders of Ancient Egypt
+              </h5>
+              <button class="cta-btn">Click here to continue</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h1>Get Your Travel Inspiration <br />Straight to Your Inbox</h1>
+        <div class="contact-input">
+          <input type="text" placeholder="example@gmail.com..." />
+          <button class="main-btn">Send</button>
+        </div>
+        <h3>
+          Get yourself updated always about travels and pick a place of your
+          choice to enjoy with family
+        </h3>
+      </section>
+      <section id="about" class="about">
+        <div class="about-icons">
+          <div class="logo">
+            <a href="#">
+              <div class="logo-img">
+                <img src="./Assets/logo.png" alt="main logo" />
+              </div>
+              <div class="logo-text">
+                MOBILE <br />
+                VIEW
+              </div>
+            </a>
+          </div>
+          <div class="socials">
+            <h3>Follow us on</h3>
+            <div class="social-icons">
+              <div class="social-icon">
+                <a href="#"><img src="./Assets/Telegram.png" alt="" /></a>
+              </div>
+              <div class="social-icon">
+                <a href="#"><img src="./Assets/Tiktok.png" alt="" /></a>
+              </div>
+              <div class="social-icon">
+                <a href="#"><img src="./Assets/insta.png" alt="" /></a>
+              </div>
+              <div class="social-icon">
+                <a href="#"><img src="./Assets/whatsapp.png" alt="" /></a>
+              </div>
+              <div class="social-icon">
+                <a href="#"><img src="./Assets/spotify.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-links">
+          <div class="links">
+            <h3>Explore</h3>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Staff</a>
+            <a href="#">Locations</a>
+            <a href="#">Off Days</a>
+          </div>
+          <div class="links">
+            <h3>Pricing</h3>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Staff</a>
+            <a href="#">Locations</a>
+            <a href="#">Off Days</a>
+          </div>
+          <div class="links">
+            <h3>Help & Support</h3>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Staff</a>
+            <a href="#">Locations</a>
+            <a href="#">Off Days</a>
+          </div>
+          <div class="links">
+            <h3>Company</h3>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Staff</a>
+            <a href="#">Locations</a>
+            <a href="#">Off Days</a>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <p>
+          &copy 2022 ZENith LLC Inc. Made with
+          <span class="lang1"><i class="fa-brands fa-html5"></i> </span>
+          <span class="lang2"><i class="fa-brands fa-css3-alt"></i></span> and
+          <span class="lang3"><i class="fa-brands fa-js"></i></span> by
+          <a href="https://github.com/ZENith-95">ZENith</a>
+          <i class=""></i>
+        </p>
+      </footer>
+      <button id="backToTop" title="Go to top">
+        <i class="fa-solid fa-angle-up"></i>
+      </button>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
