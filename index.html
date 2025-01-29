@@ -59,7 +59,6 @@
         </div>
         <div class="m-nav">
           <div class="m-btn">Sign In</div>
-          
         </div>
       </div>
     </nav>
@@ -112,63 +111,89 @@
                 <i style="margin-left: 10px" class="fa-solid fa-caret-down"></i>
               </button>
               <ul class="select-menu-dropdown" id="selectMenuDropdown">
-                <li><a href="#">Accra</a></li>
-                <li><a href="#">Kumasi</a></li>
-                <li><a href="#">Hohoe</a></li>
-                <li><a href="#">Ho</a></li>
-                <li><a href="#">Takoradi</a></li>
-                <li><a href="#">Tamale</a></li>
-                <li><a href="#">Aflao</a></li>
-                <li><a href="#">Sekondi</a></li>
-                <li><a href="#">Dome</a></li>
+                <li><a href="">Accra</a></li>
+                <li><a href="">Kumasi</a></li>
+                <li><a href="">Hohoe</a></li>
+                <li><a href="">Ho</a></li>
+                <li><a href="">Takoradi</a></li>
+                <li><a href="">Tamale</a></li>
+                <li><a href="">Aflao</a></li>
+                <li><a href="">Sekondi</a></li>
+                <li><a href="">Dome</a></li>
               </ul>
             </div>
 
             <div class="popular">Popular</div>
             <div class="popular-list">
               <ul>
-                <li><a href="#">Acrra</a></li>
-                <li><a href="#">Kumasi</a></li>
-                <li><a href="#">Hohoe</a></li>
-                <li><a href="#">Ho</a></li>
-                <li><a href="#">Takoradi</a></li>
-                <li><a href="#">Tamale</a></li>
-                <li><a href="#">Aflao</a></li>
-                <li><a href="#">Secondi</a></li>
-                <li><a href="#">Dome</a></li>
+                <li><a href="">Acrra</a></li>
+                <li><a href="">Kumasi</a></li>
+                <li><a href="">Hohoe</a></li>
+                <li><a href="">Ho</a></li>
+                <li><a href="">Takoradi</a></li>
+                <li><a href="">Tamale</a></li>
+                <li><a href="">Aflao</a></li>
+                <li><a href="">Secondi</a></li>
+                <li><a href="">Dome</a></li>
               </ul>
             </div>
             <button id="ov-btn">Click here to continue</button>
           </div>
-          <div class="destination-images">
-            <div class="destination-box">
-              <div class="destination-img">
-                <img src="./Assets/waterfall.png" alt="" />
+
+          <div class="pagination">
+            <button onclick="prevImage()">&#10094;</button>
+            <div class="destination-images" id="destinationImages">
+              <div class="destination-box">
+                <div class="destination-img">
+                  <img src="./Assets/waterfall.png" alt="" />
+                </div>
+                <h5>Golden Bridge, Bii Ne Hills</h5>
+                <p>Tv poll</p>
               </div>
-              <h5>Golden Bridge, Bii Ne Hills</h5>
-              <p>Tv poll</p>
-            </div>
-            <div class="destination-box">
-              <div class="destination-img">
-                <img src="./Assets/Golden_bridge(1).png" alt="" />
+              <div class="destination-box">
+                <div class="destination-img">
+                  <img src="./Assets/Golden_bridge(1).png" alt="" />
+                </div>
+                <h5>Golden Bridge, Bii Ne Hills</h5>
+                <p>Tv poll</p>
               </div>
-              <h5>Golden Bridge, Bii Ne Hills</h5>
-              <p>Tv poll</p>
-            </div>
-            <div class="destination-box">
-              <div class="destination-img">
-                <img src="./Assets/Volta_serene.png" alt="" />
+              <div class="destination-box">
+                <div class="destination-img">
+                  <img src="./Assets/Volta_serene.png" alt="" />
+                </div>
+                <h5>Volta Serene, OLA Top Hotel</h5>
+                <p>Tv poll, Ho</p>
               </div>
-              <h5>Volta Serene, OLA Top Hotel</h5>
-              <p>Tv poll, Ho</p>
-            </div>
-            <div class="destination-box">
-              <div class="destination-img">
-                <img src="./Assets/golden_bride.png" alt="" />
+              <div class="destination-box">
+                <div class="destination-img">
+                  <img src="./Assets/golden_bride.png" alt="" />
+                </div>
+                <h5>Golden Bridge, Bii Ne Hills</h5>
+                <p>Tv poll</p>
               </div>
-              <h5>Golden Bridge, Bii Ne Hills</h5>
-              <p>Tv poll</p>
+                <div class="destination-box">
+                <div class="destination-img">
+                  <img src="./Assets/Hotel_on_Sea.png" alt="" />
+                </div>
+                <h5>Golden Bridge, Bii Ne Hills</h5>
+                <p>Tv poll</p>
+              </div>
+                <div class="destination-box">
+                <div class="destination-img">
+                  <img src="./Assets/Great_Wall.png" alt="" />
+                </div>
+                <h5>Golden Bridge, Bii Ne Hills</h5>
+                <p>Tv poll</p>
+                  <div class="destination-box">
+                <div class="destination-img">
+                  <img src="./Assets/Great_Wall1.png" alt="" />
+                </div>
+                <h5>Golden Bridge, Bii Ne Hills</h5>
+                <p>Tv poll</p>
+              </div>
+              </div>
             </div>
+            <button onclick="nextImage()">&#10095;</button>
           </div>
         </div>
       </section>
@@ -322,19 +347,32 @@
             <h3>Follow us on</h3>
             <div class="social-icons">
               <div class="social-icon">
-                <a href="#"><img src="./Assets/Telegram.png" alt="" /></a>
+                <a href="https://t.me/Xen_ith"
+                  ><img src="./Assets/Telegram.png" alt=""
+                /></a>
               </div>
               <div class="social-icon">
-                <a href="#"><img src="./Assets/Tiktok.png" alt="" /></a>
+                <a
+                  href="https://www.tiktok.com/@lost_zenith?_t=ZM-8tT2msQFqeU&_r=1"
+                  ><img src="./Assets/Tiktok.png" alt=""
+                /></a>
               </div>
               <div class="social-icon">
-                <a href="#"><img src="./Assets/insta.png" alt="" /></a>
+                <a
+                  href="https://www.instagram.com/zenichi95?igsh=YzljYTk1ODg3Zg=="
+                  ><img src="./Assets/insta.png" alt=""
+                /></a>
               </div>
               <div class="social-icon">
-                <a href="#"><img src="./Assets/whatsapp.png" alt="" /></a>
+                <a href="https://wa.me/233550677233"
+                  ><img src="./Assets/whatsapp.png" alt=""
+                /></a>
               </div>
               <div class="social-icon">
-                <a href="#"><img src="./Assets/spotify.png" alt="" /></a>
+                <a
+                  href="https://open.spotify.com/user/bxb32i0wailvux0b7xxkcg49h?si=gaFEcbZgRvORjlf3nUTv_g"
+                  ><img src="./Assets/spotify.png" alt=""
+                /></a>
               </div>
             </div>
           </div>

@@ -86,3 +86,33 @@ window.addEventListener("click", (event) => {
     selectMenuDropdown.style.display = "none";
   }
 });
+
+let currentIndex = 0;
+const images = document.querySelectorAll("#destinationImages .destination-box");
+const totalImages = images.length;
+
+function showImage(index) {
+  images.forEach((img, i) => {
+    img.style.display = i === index ? "block" : "none";
+  });
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % totalImages;
+  showImage(currentIndex);
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+  showImage(currentIndex);
+}
+
+function autoScroll() {
+  nextImage();
+  setTimeout(autoScroll, 3000);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  showImage(currentIndex);
+  autoScroll();
+});
